@@ -12,16 +12,6 @@
     height: 100vh;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.container-2 {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
 aside {
     float: left;
     width: 300px;
@@ -51,6 +41,7 @@ footer {
 
 .container-flex {
     display: flex;
+    flex-direction: row;
     flex-direction: column;
 }
 
@@ -77,6 +68,10 @@ footer {
 
 .spotify-lg {
     width: 170px;
+}
+
+.fa-home {
+    padding-right: 17px;
 }
 
 .spotify-xs {
@@ -117,6 +112,23 @@ li {
 }
 
 
+/* MAIN CSS*/
+
+.container {
+    height: 150%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: black;
+
+}
+
+.container-2 {
+    height: 70px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: red;
+
+}
 
 
 
