@@ -49,33 +49,41 @@ footer {
 
 /* ASIDE CSS*/
 
-.container-flex1 {
+.container-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-up {
     display: flex;
     flex-direction: column;
     color: lightgrey;
     padding-left: 50px;
 }
 
-.container-flex2 {
+.container-middle {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     color: lightgrey;
     padding-left: 50px;
 }
 
-.container-flex3 {
+.container-bottom {
     position: absolute;
     bottom: 0;
     color: lightgrey;
     padding-left: 50px;
+    padding-bottom: 20px;
 }
 
-.container-flex1 img {
+.spotify-lg {
     width: 170px;
 }
 
-.container-flex2 div span {
+.spotify-xs {
+    display: none;
+}
+
+.container-middle div span {
     font-weight: 700;
     font-size: 14px;
     padding-bottom: 15px;
@@ -86,7 +94,7 @@ footer {
 
 ul li i {
     padding-right: 20px;
-    font-size: 20px
+    font-size: 24px;
 }
 
 li {
@@ -122,33 +130,64 @@ li {
     }
 
     aside {
-        height: 85vh;
-        width: 25%;
+        width: 90px;
+        height: calc(100% - 120px);
+    }
+
+    .spotify-xs {
+        display: block;
+        width: 35px;
+        margin: 25px 0;
+    }
+
+    .spotify-lg {
+        display: none;
+    }
+
+    .container-up, .container-bottom {
+        padding-left: 33px;
+    }
+
+    ul li span, .lista2 {
+        display: none;
+    }
+
+    ul li i {
+        padding: 0;
+        text-align: center;
     }
 
     main {
-        width: 75%;
-        height: 85vh;
+        width: calc(100% - 90px);
+        height: calc(100% - 120px);
     }
 
     footer {
-        height: 15vh;
+        height: 120px;
     }
 
 }
 
-@media all and (max-width: 992px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
 
     .container-2 {
         display: none;
     }
 
     aside {
-        width: 35%;
+        width: 250px;
+    }
+
+    .container-up, .container-middle, .container-bottom {
+        padding-left: 40px;
+    }
+
+    .spotify-lg {
+        width: 130px;
     }
 
     main {
-        width: 65%;
-    }
+            width: calc(100% - 250px);
+        }
 
 }
