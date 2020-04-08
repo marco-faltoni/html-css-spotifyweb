@@ -6,8 +6,10 @@
 
 /* GENERAL INSTRUCTION */
 
-body {
+.body-wrapper {
     font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100vh;
 }
 
 .container {
@@ -23,15 +25,16 @@ body {
 aside {
     float: left;
     width: 300px;
-    height: 88vh;
+    height: calc(100% - 150px);
     background-color: rgb(4,4,4);
+    position: relative;
 }
 
 main {
     float: left;
     overflow-y: auto;
     width: calc(100% - 300px);
-    height: 88vh;
+    height: calc(100% - 150px);
     background: rgb(60,62,105);
     background: linear-gradient(349deg, rgba(60,62,105,1) 0%, rgba(86,75,185,1) 49%, rgba(163,81,146,1) 100%);
 }
@@ -39,7 +42,7 @@ main {
 footer {
     float: left;
     width: 100%;
-    height: 12vh;
+    height: 150px;
     background-color: rgb(40,40,40);
 }
 
@@ -57,6 +60,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: lightgrey;
+    padding-left: 50px;
+}
+
+.container-flex3 {
+    position: absolute;
+    bottom: 0;
     color: lightgrey;
     padding-left: 50px;
 }
