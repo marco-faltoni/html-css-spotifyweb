@@ -111,6 +111,10 @@ li {
     padding-bottom: 5px;
 }
 
+i {
+    vertical-align: middle;
+}
+
 
 /* MAIN CSS*/
 
@@ -123,11 +127,30 @@ li {
 }
 
 .container-center {
-    height: 150%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: black;
+}
 
+.main-container-flex {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.h1 {
+    width: 100%;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.quadro {
+    height: 125px;
+    width: 110px;
+    background-color: orange;
+    border: 1px solid black;
 }
 
 
@@ -135,6 +158,14 @@ li {
 
 
 /* MEDIA QUERY */
+
+@media all and (max-width: 374px) {
+
+    .quadro {
+        height: 186px;
+        width: 165px;
+    }
+}
 
 @media all and (max-width: 767px) {
 
@@ -174,6 +205,14 @@ li {
 
     }
 
+    .h1 {
+        font-size:12px ;
+    }
+
+    .main-container-flex {
+        padding-left: 32px;
+    }
+
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -197,5 +236,9 @@ li {
     main {
             width: calc(100% - 250px);
         }
+
+    .main-container-flex {
+        padding-left: 40px;
+    }
 
 }
