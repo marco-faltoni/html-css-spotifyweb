@@ -129,6 +129,7 @@ i {
 .container-center {
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .main-container-flex {
@@ -136,7 +137,7 @@ i {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    padding-left: 50px;
+    padding-left: 85px;
     padding-top: 50px;
     padding-right: 20px;
 }
@@ -162,8 +163,10 @@ i {
 .quadro {
     height: 250px;
     width: 175px;
-    background-color: orange;
-    border: 1px solid black;
+    background-color: rgba(40,40,40, 0.5);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -180,7 +183,7 @@ i {
         padding-right: 0;
     }
 
-    .h1, .h1-a .h3 {
+    .h1, .h1-a, .h3 {
         text-align: center;
     }
 
