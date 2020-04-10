@@ -301,38 +301,31 @@ i {
 }
 
 #range-player {
-    width: 80%;
+    width: 83%;
 }
 
 
 .fot-right {
     float: left;
     width: 15%;
-}
-
-.elements {
-    float: right;
-    width: 100%;
-    height: 100%;
+    padding: 18px;
     color: white;
 }
 
 .icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 50%;
-}
-
-.icons i {
-    padding-right: 15px;
+    height: 60%;
 }
 
 .range {
+    display: flex;
     width: 100%;
-    height: 50%;
+    height: 40%;
 }
+
 
 
 /* MEDIA QUERY */
@@ -486,12 +479,14 @@ i {
 
 }
 
-/* STILI SLIDER VOLUME */
+
+
+/* STILE RANGE SLIDER */
 [type=range] {
   -webkit-appearance: none;
   background: transparent;
   margin: 0px 0;
-  width: 90%;
+  width: 100%;
 }
 [type=range]::-moz-focus-outer {
   border: 0;
