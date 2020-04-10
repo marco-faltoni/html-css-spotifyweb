@@ -234,26 +234,25 @@ i {
 .fot-left {
     width: 22%;
     padding: 18px;
+    display: flex;
+    align-items: center;
 }
 
-.fot-left img {
+.fot-left-image {
+    width: 38%;
+    height: 100%;
     display: inline-block;
-    float: left;
+}
+
+.fot-left-image img {
     object-fit: cover;
     height: 100%;
+    width: 100%;
     border-radius: 3px;
-}
-
-.fot-left i {
-    float: left;
-    color: white;
-    padding-top: 28px;
 }
 
 .fot-left-text {
     width: 50%;
-    float: left;
-    padding-top: 20px;
     padding-left: 10px;
 }
 
@@ -266,6 +265,15 @@ i {
     color: lightgrey;
 }
 
+.fot-left-heart {
+    width: 15%;
+    color: white;
+}
+
+.fot-left-heart i {
+    color: white;
+}
+
 .fot-center {
     width: 45%;
     background-color: red;
@@ -273,22 +281,31 @@ i {
 
 .fot-right {
     float: left;
-    padding-top: 20px;
     width: 15%;
+}
+
+.elements {
+    float: right;
+    width: 100%;
+    height: 100%;
     color: white;
-    position: relative;
 }
 
 .icons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 50%;
 }
 
 .icons i {
     padding-right: 15px;
+}
+
+.range {
+    width: 100%;
+    height: 50%;
 }
 
 
@@ -304,31 +321,6 @@ i {
 
     .h1, .h1-a, .h3 {
         text-align: center;
-    }
-
-    .fot-left {
-        width: 38%;
-    }
-
-    .fot-left-text {
-        display: none;
-    }
-
-    .fot-left img {
-        height: 80%;
-        margin-top: 6px;
-    }
-
-    .fot-left i {
-        padding-left: 15px;
-    }
-
-    .fot-center {
-        width: 62%;
-    }
-
-    .fot-right {
-        display: none;
     }
 
     input {
@@ -392,6 +384,30 @@ i {
         font-size: 14px;
     }
 
+    .fot-left {
+        width: 38%;
+    }
+
+    .fot-left-image {
+        width: 70%;
+    }
+
+    .fot-left-text {
+        display: none;
+    }
+
+    .fot-left-heart i {
+        padding-left: 15px;
+    }
+
+    .fot-center {
+        width: 62%;
+    }
+
+    .fot-right {
+        display: none;
+    }
+
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -425,14 +441,18 @@ i {
         padding-left: 15px;
     }
 
+    .fot-left {
+        width: 30%;
+    }
+
 }
 
-/* STILE SLIDER */
+/* STILI SLIDER VOLUME */
 [type=range] {
   -webkit-appearance: none;
   background: transparent;
   margin: 0px 0;
-  width: 48%;
+  width: 90%;
 }
 [type=range]::-moz-focus-outer {
   border: 0;
