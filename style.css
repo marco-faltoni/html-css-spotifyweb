@@ -67,7 +67,7 @@ footer {
 }
 
 .spotify-lg {
-    width: 170px;
+    width: 150px;
 }
 
 .fa-home {
@@ -97,6 +97,11 @@ li {
     font-weight: 700;
     font-size: 14px;
     padding: 10px 0px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: white;
 }
 
 .lista2 ul {
@@ -134,8 +139,16 @@ i {
     color: rgba(255, 255, 255, 0.8) ;
 }
 
+.top-main-container h5 {
+    cursor: pointer;
+}
+
+.top-main-container h5:hover {
+    color: white;
+}
+
 .top-main-container-hamburger {
-    display: none;
+    opacity: 0;
 }
 
 .container-center {
@@ -181,6 +194,12 @@ i {
     margin-right: 10px;
     margin-bottom: 10px;
     padding: 19px;
+    cursor: pointer;
+}
+
+.quadro:hover {
+    box-shadow: 0px 5px 28px -16px black;
+    transform: scale(1.014);
 }
 
 .quadro-images {
@@ -189,6 +208,7 @@ i {
     height: 66%;
     border-radius: 2px;
     margin-bottom: 13%;
+    position: relative;
 }
 
 .quadro-images img {
@@ -197,6 +217,20 @@ i {
     height: 100%;
     border-radius: 2px;
     margin-bottom: 13%;
+    box-shadow: 0px 0px 19px -5px black;
+}
+
+.play-hover {
+    color: #1ed760;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.play-hover:hover{
+    opacity: 1;
 }
 
 .artist {
@@ -245,10 +279,15 @@ i {
 }
 
 .fot-left-image img {
-    object-fit: cover;
+    cursor: pointer;
+    object-fit: contain;
     height: 100%;
     width: 100%;
     border-radius: 3px;
+}
+
+.fot-left-image img:hover {
+    transform: scale(1.1);
 }
 
 .fot-left-text {
@@ -272,6 +311,11 @@ i {
 
 .fot-left-heart i {
     color: white;
+    cursor: pointer;
+}
+
+.fot-left-heart i:hover {
+    color: red;
 }
 
 .fot-center {
@@ -286,8 +330,20 @@ i {
     align-items: center;
     width: 70%;
     height: 60%;
-    color: white;
+    color: lightgrey;
     margin: 0 auto;
+}
+
+.commands-player i {
+    cursor: pointer;
+}
+
+.commands-player i:hover {
+    color: white;
+}
+
+.fas.fa-2x.fa-pause-circle:hover {
+    transform: scale(1.1)
 }
 
 .player {
@@ -296,7 +352,7 @@ i {
     align-items: center;
     width: 100%;
     height: 40%;
-    color: white;
+    color: lightgrey;
     font-size: 12px;
 }
 
@@ -309,7 +365,7 @@ i {
     float: left;
     width: 15%;
     padding: 18px;
-    color: white;
+    color: lightgrey;
 }
 
 .icons {
@@ -318,6 +374,14 @@ i {
     align-items: center;
     width: 100%;
     height: 60%;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: white;
 }
 
 .range {
@@ -363,15 +427,6 @@ i {
         display: none;
     }
 
-    .top-main-container-hamburger {
-        height: 70px;
-        max-width: 900px;
-        display: flex;
-        align-items: center;
-        color: rgba(255, 255, 255, 0.8);
-        padding-left: 15px;
-    }
-
     aside {
         width: 90px;
     }
@@ -397,6 +452,11 @@ i {
     ul li i {
         padding: 0;
         text-align: center;
+    }
+
+    .top-main-container-hamburger {
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.8);
     }
 
     main {
@@ -465,16 +525,20 @@ i {
         }
 
     .top-main-container-hamburger {
-        height: 70px;
-        max-width: 900px;
-        display: flex;
-        align-items: center;
+        opacity: 1;
         color: rgba(255, 255, 255, 0.8);
-        padding-left: 15px;
     }
 
     .fot-left {
         width: 30%;
+    }
+
+    .fot-center {
+        width: 50%;
+    }
+
+    .fot-right {
+        width: 20%;
     }
 
 }
@@ -482,6 +546,7 @@ i {
 
 
 /* STILE RANGE SLIDER */
+
 [type=range] {
   -webkit-appearance: none;
   background: transparent;
