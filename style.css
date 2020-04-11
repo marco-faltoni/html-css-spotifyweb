@@ -147,8 +147,16 @@ i {
     color: white;
 }
 
-.top-main-container-hamburger {
+.top-main-container-hamburger{
     opacity: 0;
+}
+
+.top-main-container-hamburger i{
+    cursor: pointer;
+}
+
+.top-main-container-hamburger i:hover {
+    color: white;
 }
 
 .container-center {
